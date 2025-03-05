@@ -5,12 +5,12 @@ let body = document.querySelector("body");
 let callbackfn = () => {
     if(mode==="light"){
         mode = "dark";
-        body.style.backgroundColor = "black";
-        console.log(mode);
+        body.classList.add("dark");
+        body.classList.remove("light");
     }else{
         mode = "light";
-        body.style.backgroundColor = "white";
-        console.log(mode);
+        body.classList.add("light");
+        body.classList.remove("dark");
     }
 }
 
